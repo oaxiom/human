@@ -206,6 +206,8 @@ def remap_expn_sample_names(expn):
     for n in names:
         if n in sample_description:
             new_names.append(sample_description[n])
+        else:
+            new_names.append(n)
     expn.setConditionNames(new_names)
 
 def get_citation_list(list_of_gses):
@@ -221,7 +223,7 @@ def get_citation_list(list_of_gses):
     return(r)
 
 if __name__ == "__main__":
-    expn = glload("../hg38v81/rsem-genes/genes_cpm_expression.glb") # Only check against the publishable set
+    expn = glload("../te_counts/genes_ntc_expression.glb") # Only check against the publishable set
 
     print(expn.getConditionNames())
 
@@ -233,16 +235,22 @@ if __name__ == "__main__":
     ss1 = set(expn_names) - set(desc_names)
     ss2 = set(desc_names) - set(expn_names)
     if ss1:
-        print("Missing in sample_description:", ss1)
+        print("Missing in sample_description:")
+        for s in sorted(ss1):
+            print("'{}',".format(s))
+    print()
     if ss2:
-        print("Missing in expn              :", ss2)
+        print("Missing in expn:")
+        for s in sorted(ss2):
+            print("'{}',".format(s))
+
     print("\nChecking for duplicate formal names in sample_description:")
     print(" failed\n".join([x for x, y in Counter(sample_description.values()).items() if y > 1]))
 
     print("\nSample GEO:")
     for c in expn.getConditionNames():
         if c not in sample_gse:
-            print("Sample '%s' has no GSE entry" % c)
+            print("Sample '{}' has no GSE entry".format(c))
     print("\nGene layer:")
     all_assigned_to_gene_layer = sorted({x for v in gene_layer.values() for x in v})
 
