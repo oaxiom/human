@@ -15,7 +15,7 @@ ensg = glload('hg38_gencode_ensg_v{}.glb'.format(version))
 print(ensg)
 
 tes = genelist(filename='../repeats/hg38_repeats_gc.tsv', format={'force_tsv': True, 'ensg': 0, 'name': 0})
-tes.addEmptyKey('transcript_type', 'TE')
+tes = tes.addEmptyKey('transcript_type', 'TE')
 
 m = ensg + tes
 

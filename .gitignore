@@ -9,6 +9,9 @@ __pycache__/
 # Customs
 *.tsv
 .DS_Store
+*.glb
+*.png
+*.pdf
 
 # Distribution / packaging
 .Python
