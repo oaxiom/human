@@ -1,23 +1,23 @@
 bad_samples = set([
     # <0.5e6 reads
-    'Caudate_nucleus_1', 'Caudate_nucleus_2', 'Caudate_nucleus_3', 'Caudate_nucleus_4', 'Caudate_nucleus_5',
-    'Frontal_pole_2', 'Frontal_pole_6',
-    'hESC_H1_15',
-    'Hippocampus_1', 'Hippocampus_2', 'Hippocampus_3', 'Hippocampus_3', 'Hippocampus_4', 'Hippocampus_5' , 'Hippocampus_6',
-    'Macrophages_1', 'Macrophages_2', 'Sperm_3',
-    'astrocyte_fetal_1', 'astrocyte_fetal_2', 'astrocyte_fetal_3', 'astrocyte_fetal_4', 'astrocyte_fetal_5',
-    'astrocyte_fetal_6', 'Polarbody_2',
-    'Oocyte_4', 'Oocyte_5',
+    'Caudate_nucleus_rp1', 'Caudate_nucleus_rp2', 'Caudate_nucleus_rp3', 'Caudate_nucleus_rp4', 'Caudate_nucleus_rp5',
+    'Frontal_pole_rp2', 'Frontal_pole_rp6',
+    'hESC_H1_rp15',
+    'Hippocampus_rp1', 'Hippocampus_rp2', 'Hippocampus_rp3', 'Hippocampus_rp3', 'Hippocampus_rp4', 'Hippocampus_rp5' , 'Hippocampus_rp6',
+    'Macrophages_rp1', 'Macrophages_rp2', 'Sperm_rp3',
+    'astrocyte_fetal_rp1', 'astrocyte_fetal_rp2', 'astrocyte_fetal_rp3', 'astrocyte_fetal_4', 'astrocyte_fetal_5',
+    'astrocyte_fetal_rp6', 'Polarbody_rp2',
+    'Oocyte_rp4', 'Oocyte_rp5',
     # others:
-    'Airway_basal_cells_25', 'Airway_basal_cells_26', 'Airway_basal_cells_27', # are super outliers. I take the majority vote and delete these
-    'Epidermal_keratinocytes_6', # sample 6 has a problem, I take the majority vote
-    'Large_airway_epithelial_cells_2', # looks mangled for some reason
+    'Airway_basal_cells_rp25', 'Airway_basal_cells_rp26', 'Airway_basal_cells_rp27', # are super outliers. I take the majority vote and delete these
+    'Epidermal_keratinocytes_rp6', # sample 6 has a problem, I take the majority vote
+    'Large_airway_epithelial_cells_rp2', # looks mangled for some reason
     # Weird outliers:
-    'Ileum_3', 'Ileum_9', 'Ileum_13', 'Retina_3',
+    'Ileum_rp3', 'Ileum_rp9', 'Ileum_rp13', 'Retina_rp3',
     # Bad embryo:
-    'Embryo_8C_10',
+    'Embryo_8C_rp10',
     # Bad curves:
-    'Skeletal_muscle_cells_1', 'Skeletal_muscle_cells_2',
+    'Skeletal_muscle_cells_rp1', 'Skeletal_muscle_cells_rp2',
     'Macrophages_rp1', 'Macrophages_rp2',
     # Single cell bads:
     # SS Conceptoid

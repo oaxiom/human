@@ -17,7 +17,7 @@ raw_expn.sort_conditions()
 arr = raw_expn.mean_replicates(
     ['Adipose_rp1', 'Adipose_rp2'],
     ['Adrenal_gland_rp1', 'Adrenal_gland_rp2'],
-    ['Airway_basal_cells_rp1', 'Airway_basal_cells_rp2', 'Airway_basal_cells_rp3', 'Airway_basal_cells_rp4', 'Airway_basal_cells_rp5', 'Airway_basal_cells_rp6', 'Airway_basal_cells_rp7', 'Airway_basal_cells_rp8', 'Airway_basal_cells_rp9', 'Airway_basal_cells_rp10', 'Airway_basal_cells_rp11', 'Airway_basal_cells_rp12', 'Airway_basal_cells_rp13', 'Airway_basal_cells_rp14', 'Airway_basal_cells_rp15', 'Airway_basal_cells_rp16', 'Airway_basal_cells_rp17', 'Airway_basal_cells_rp18', 'Airway_basal_cells_rp19', 'Airway_basal_cells_20', 'Airway_basal_cells_21', 'Airway_basal_cells_22', 'Airway_basal_cells_23', 'Airway_basal_cells_24', 'Airway_basal_cells_28', 'Airway_basal_cells_29', 'Airway_basal_cells_30'],
+    ['Airway_basal_cells_rp1', 'Airway_basal_cells_rp2', 'Airway_basal_cells_rp3', 'Airway_basal_cells_rp4', 'Airway_basal_cells_rp5', 'Airway_basal_cells_rp6', 'Airway_basal_cells_rp7', 'Airway_basal_cells_rp8', 'Airway_basal_cells_rp9', 'Airway_basal_cells_rp10', 'Airway_basal_cells_rp11', 'Airway_basal_cells_rp12', 'Airway_basal_cells_rp13', 'Airway_basal_cells_rp14', 'Airway_basal_cells_rp15', 'Airway_basal_cells_rp16', 'Airway_basal_cells_rp17', 'Airway_basal_cells_rp18', 'Airway_basal_cells_rp19', 'Airway_basal_cells_rp20', 'Airway_basal_cells_rp21', 'Airway_basal_cells_rp22', 'Airway_basal_cells_rp23', 'Airway_basal_cells_rp24', 'Airway_basal_cells_rp28', 'Airway_basal_cells_rp29', 'Airway_basal_cells_rp30'],
     ['Airway_smooth_muscle_rp1', 'Airway_smooth_muscle_rp2', 'Airway_smooth_muscle_rp3', 'Airway_smooth_muscle_rp4'],
     ['Aortic_adventitial_fibroblasts_rp1', 'Aortic_adventitial_fibroblasts_rp2'],
     ['Aortic_endothelial_cells_rp1', 'Aortic_endothelial_cells_rp2'],
@@ -58,7 +58,7 @@ arr = raw_expn.mean_replicates(
     ['Dermal_lymphatic_endothelium_rp1', 'Dermal_lymphatic_endothelium_rp2'],
     ['Dorsolateral_prefrontal_cortex_rp1', 'Dorsolateral_prefrontal_cortex_rp2', 'Dorsolateral_prefrontal_cortex_rp3', 'Dorsolateral_prefrontal_cortex_rp4', 'Dorsolateral_prefrontal_cortex_rp5'],
     ['Early_basophilic_erythroblast_rp1', 'Early_basophilic_erythroblast_rp2', 'Early_basophilic_erythroblast_rp3', 'Early_basophilic_erythroblast_rp4', 'Early_basophilic_erythroblast_rp5', 'Early_basophilic_erythroblast_rp6'],
-    ['ectoderm_invitro_1' ,'ectoderm_invitro_rp2', 'ectoderm_invitro_rp3', 'ectoderm_invitro_rp4', 'ectoderm_invitro_rp5', 'ectoderm_invitro_rp6', 'ectoderm_invitro_rp7', 'ectoderm_invitro_rp8', 'ectoderm_invitro_rp9', 'ectoderm_invitro_rp10', 'ectoderm_invitro_rp11', 'ectoderm_invitro_rp12', 'ectoderm_invitro_rp13', 'ectoderm_invitro_14'],
+    ['ectoderm_invitro_1' ,'ectoderm_invitro_rp2', 'ectoderm_invitro_rp3', 'ectoderm_invitro_rp4', 'ectoderm_invitro_rp5', 'ectoderm_invitro_rp6', 'ectoderm_invitro_rp7', 'ectoderm_invitro_rp8', 'ectoderm_invitro_rp9', 'ectoderm_invitro_rp10', 'ectoderm_invitro_rp11', 'ectoderm_invitro_rp12', 'ectoderm_invitro_rp13', 'ectoderm_invitro_rp14'],
     ['Embryo_2C_rp1', 'Embryo_2C_rp2', 'Embryo_2C_rp3'],
     ['Embryo_4C_rp1', 'Embryo_4C_rp2', 'Embryo_4C_rp3', 'Embryo_4C_rp4'],
     ['Embryo_8C_rp1', 'Embryo_8C_rp2', 'Embryo_8C_rp3', 'Embryo_8C_rp4', 'Embryo_8C_rp5', 'Embryo_8C_rp6', 'Embryo_8C_rp7', 'Embryo_8C_rp8', 'Embryo_8C_rp9', 'Embryo_8C_rp11'],
