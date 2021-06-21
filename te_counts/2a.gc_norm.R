@@ -3,7 +3,7 @@
 library('data.table')
 library("EDASeq")
 
-#setwd('/Volumes/RAID1/big_mouse/mouse/te_counts') # For RStudio;
+#setwd('/Volumes/RAID1/big_human/human/te_counts') # For RStudio;
 
 count_table <- data.frame(fread("norm_input.tsv"), row.names='ensg')
 

@@ -13,7 +13,9 @@ bad_samples = set([
     'Epidermal_keratinocytes_rp6', # sample 6 has a problem, I take the majority vote
     'Large_airway_epithelial_cells_rp2', # looks mangled for some reason
     # Weird outliers:
-    'Ileum_rp3', 'Ileum_rp9', 'Ileum_rp13', 'Retina_rp3',
+    'Ileum_rp3', 'Ileum_rp9', 'Ileum_rp13',
+    'Retina_rp3',
+    'Treg',
     # Bad embryo:
     'Embryo_8C_rp10',
     # Bad curves:
