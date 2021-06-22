@@ -15,10 +15,15 @@ bad_samples = set([
     # Weird outliers:
     'Ileum_rp3', 'Ileum_rp9', 'Ileum_rp13',
     'Retina_rp3',
-    'Treg',
+    'Treg_rp1',
     # Bad embryo:
     'Embryo_8C_rp10',
     # Bad curves:
+    'astrocyte_fetal_rp5',
+    'CD4p_ILC1_rp4',
+    'Cardiac_resident_MSC_W8B2p_rp2',
+    'Cortex_rp1',
+    'Frontal_pole_rp1', 'Frontal_pole_rp2', 'Frontal_pole_rp3', 'Frontal_pole_rp4', 'Frontal_pole_rp5',
     'Skeletal_muscle_cells_rp1', 'Skeletal_muscle_cells_rp2',
     'Macrophages_rp1', 'Macrophages_rp2',
     # Single cell bads:

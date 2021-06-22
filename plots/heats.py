@@ -8,6 +8,9 @@ config.draw_mode = "pdf"
 arr = glload("../te_counts/genes_ntc_expression.glb")
 arr.log(2,.1)
 
+arrZ = arr.deepcopy()
+arrZ.row_Z()
+
 gene_lists = {
     "Foxies": ['FOXA1', 'FOXA2', 'FOXA3', 'FOXB1', 'FOXB2', 'FOXC2',
         'FOXD1', 'FOXD2', 'FOXD3', 'FOXDE1', 'FOXE3', 'FOXF1', 'FOXF2',
@@ -29,12 +32,14 @@ todo.update(gls)
 for k in todo:
     mm = todo[k].map(genelist=arr, key="name")
 
-    mm.heatmap(filename="heats/%s_heat.png" % k, bracket=[0, 1], row_norm=True,
+    mm.heatmap(filename="heats/%s_heat.png" % k, bracket=[0, 1], row_norm=False,
         row_font_size=5, col_font_size=4, size=[12,4], heat_wid=0.77,
         col_cluster=True, heat_hei=0.015*len(mm),
         colbar_label="rn")
 
-    mm.heatmap(filename="heats/exp_%s_heat.png" % k, bracket=[4, 15], row_norm=False,
+    mm = todo[k].map(genelist=arrZ, key="name")
+
+    mm.heatmap(filename="heats/Z-%s_heat.png" % k, bracket=[-3, 3], row_norm=False,
         row_font_size=5, col_font_size=4, size=[12,4], heat_wid=0.77,
         col_cluster=True, heat_hei=0.015*len(mm),
-        colbar_label="normalised expression")
+        colbar_label="Z-score")
