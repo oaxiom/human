@@ -9,6 +9,11 @@ arr = glload("../te_counts/genes_ntc_expression.glb")
 tree = arr.tree(filename="tree.pdf", row_names=arr["name"], color_threshold=0.0)
 
 gene_list = [
+    'LTR:ERV1:HERVE-int',
+    'LTR:ERV1:L1TD',
+
+    'ZRSR2',
+
     'WRN', 'CAT', 'ATP7B', # Werner syndrome gene
     'ESR1', 'HNRNPU', 'SAFB', 'MATR3',
     'MCCC1', 'RELA', 'NFKB1',
@@ -37,6 +42,6 @@ gene_list = [
 
 for g in gene_list:
     arr.barh_single_item(value=g, key="name", filename="barh/%s.pdf" % g,
-        tree=tree, yticklabel_fontsize=6, size=(5,17))
+        tree=tree, yticklabel_fontsize=3, size=(5,17))
 
 

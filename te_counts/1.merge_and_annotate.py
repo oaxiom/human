@@ -18,6 +18,8 @@ for f in all_files:
 
     if ".rp" in head:
         head = "_".join(head.split(".")[0:2])
+    elif 'Hs_SS' in head:
+        head = head.replace('Hs_SS_', '').replace('.tecount.tsv.gz', '').replace('.', '_')
     else:
         head = head.split(".")[0]
 
