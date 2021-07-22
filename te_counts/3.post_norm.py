@@ -82,6 +82,9 @@ arr = raw_expn.mean_replicates(
     ['Embryo_8C_rp1', 'Embryo_8C_rp2', 'Embryo_8C_rp3', 'Embryo_8C_rp4', 'Embryo_8C_rp5', 'Embryo_8C_rp6', 'Embryo_8C_rp7', 'Embryo_8C_rp8', 'Embryo_8C_rp9', 'Embryo_8C_rp11'],
     ['Embryo4C_E1_C1', 'Embryo4C_E1_C2', 'Embryo4C_E1_C3', 'Embryo4C_E1_C4', 'Embryo4C_E2_C1', 'Embryo4C_E2_C2', 'Embryo4C_E2_C3', 'Embryo4C_E2_C4', 'Embryo4C_E3_C1', 'Embryo4C_E3_C2', 'Embryo4C_E3_C3', 'Embryo4C_E3_C4'],
     ['Embryo8C_E1_C1', 'Embryo8C_E1_C2', 'Embryo8C_E1_C3', 'Embryo8C_E1_C4', 'Embryo8C_E2_C1', 'Embryo8C_E2_C2', 'Embryo8C_E2_C3', 'Embryo8C_E2_C4', 'Embryo8C_E2_C5', 'Embryo8C_E2_C6', 'Embryo8C_E2_C7', 'Embryo8C_E2_C8', 'Embryo8C_E3_C1', 'Embryo8C_E3_C2', 'Embryo8C_E3_C3', 'Embryo8C_E3_C4', 'Embryo8C_E3_C5', 'Embryo8C_E3_C6', 'Embryo8C_E3_C7', 'Embryo8C_E3_C8'],
+
+
+
     ['Endometrial_stromal_cells_rp1', 'Endometrial_stromal_cells_rp2', 'Endometrial_stroma_rp1', 'Endometrial_stroma_rp2'],
     ['Endometrial_stroma_rp1', 'Endometrial_stroma_rp2'],
     ['endometrial_stromal_fibroblasts_rp1', 'endometrial_stromal_fibroblasts_rp2'],
