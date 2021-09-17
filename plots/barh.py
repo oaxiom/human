@@ -11,6 +11,7 @@ tree = arr.tree(filename="tree.pdf", row_names=arr["name"], color_threshold=0.0)
 gene_list = [
     'LTR:ERV1:HERVE-int',
     'LTR:ERV1:L1TD',
+    'ERVH48-1',
 
     'ZRSR2',
 

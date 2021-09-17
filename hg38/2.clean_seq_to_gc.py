@@ -29,7 +29,7 @@ for entry in fasta:
     seq = entry['seq'].lower()
 
     type = header[7]
-    if type not in ('protein_coding', 'lincRNA'):
+    if type not in ('protein_coding', 'lincRNA', 'lncRNA'):
         if type not in missed_types:
             missed_types.add(type)
         continue
@@ -77,7 +77,7 @@ ensg_gc = genelist()
 ensg_gc.load_list(newl)
 ensg_gc.saveTSV('hg38_gencode_ensg_gc_percent_v%s.txt' % version, key_order=['ensg', 'gc'])
 
-tes_gc = genelist('../repeats/hg38_repeats_gc.tsv', format={'force_tsv': True, 'ensg': 0, 'gc': 1})
+tes_gc = genelist('hg38_repeats_gc.tsv', format={'force_tsv': True, 'ensg': 0, 'gc': 1})
 
 print(tes_gc)
 ensg_gc += tes_gc
