@@ -90,4 +90,3 @@ print(paste("Kept:", dim(norm_table)[1]))
 dev.off()
 
 write.table(norm_table, "rawtags_gc_normed.tsv", sep="\t", col.names=NA)
-

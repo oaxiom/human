@@ -12,6 +12,8 @@ gene_list = [
     'LTR:ERV1:HERVE-int',
     'LTR:ERV1:L1TD',
     'ERVH48-1',
+    'JUN',
+    'FIGLA',
 
     'ZRSR2',
 
@@ -43,6 +45,7 @@ gene_list = [
 
 for g in gene_list:
     arr.barh_single_item(value=g, key="name", filename="barh/%s.pdf" % g,
-        tree=tree, yticklabel_fontsize=3, size=(5,17))
+        tree=tree, yticklabel_fontsize=3, size=(5,17),
+        xlims=[0, 1000])
 
 
