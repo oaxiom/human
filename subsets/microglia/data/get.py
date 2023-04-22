@@ -30,3 +30,8 @@ expn.saveTSV("expn.tsv", key_order=['ensg', 'name'])
 
 expn.tree(filename='tree.pdf', figsize=[5,3],)
 
+# Save for REactome:
+expn = expn.filter_low_expressed(200, 1)
+expn = expn.getColumns(['name'])
+expn.saveTSV("expn-reactome.txt", key_order=['name'])
+

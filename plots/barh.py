@@ -9,9 +9,10 @@ arr = glload("../te_counts/genes_ntc_expression.glb")
 tree = arr.tree(filename="tree.pdf", row_names=arr["name"], color_threshold=0.0)
 
 gene_list = [
+    'HNRNPU',
     'LTR:ERV1:HERVE-int',
     'LTR:ERV1:L1TD',
-    'ERVH48-1',
+    'ERVH48-1', 'SFRP2',
     'JUN',
     'FIGLA',
 

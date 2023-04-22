@@ -19,6 +19,8 @@ gene_lists = {
         'FOXN3', 'FOXN4', 'FOXO1', 'FOXO3', 'FOXO4', 'FOXO6', 'FOXP1',
         'FOXP2', 'FOXP3', 'FOXP4', 'FOXQ1', 'FOXR1', 'FOXR2', 'FOXS1',],
     'Nuclear_matrix': ['HNRNPU', 'SAFB', 'MATR3'],
+    'Nuclear_matrix2': ['HNRNPU', 'TPRX1', 'NANOG'],
+    'Trophoblast': ['TEAD4', 'VGLL1', 'GATA3', 'YAP1',]
     }
 
 gls = {}
@@ -32,10 +34,10 @@ todo.update(gls)
 for k in todo:
     mm = todo[k].map(genelist=arr, key="name")
 
-    mm.heatmap(filename="heats/%s_heat.png" % k, bracket=[0, 1], row_norm=False,
+    mm.heatmap(filename="heats/%s_heat.png" % k, bracket=[4, 14], row_norm=False,
         row_font_size=5, col_font_size=4, size=[12,4], heat_wid=0.77,
         col_cluster=True, heat_hei=0.015*len(mm),
-        colbar_label="rn")
+        colbar_label="log2(NTC)")
 
     mm = todo[k].map(genelist=arrZ, key="name")
 

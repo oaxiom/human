@@ -26,7 +26,7 @@ print(expn.getConditionNames())
 
 cols = sam_map.get_colours(expn.getConditionNames())
 
-genes = ['HNRNPU', ]
+genes = ['HNRNPU', 'VGLL1', 'TEAD4',]
 
 for gene in genes:
     spot_size = numpy.array(expn_no_log.get(key='name', value=gene)[0]['conditions']) / 100
