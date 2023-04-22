@@ -7,9 +7,7 @@ __pycache__/
 *.so
 
 # Customs
-*.tsv
 .DS_Store
-*.glb
 *.png
 *.pdf
 
