@@ -305,7 +305,7 @@ arr = arr.filter_low_expressed(10**1.6, 1)
 mapped = ensg.map(key="ensg", genelist=arr)
 mapped.strip_errs() # I probably want a error key containing version too...
 print(list(mapped.keys()))
-mapped.saveTSV("genes_ntc_expression.tsv", key_order=['ensg', 'name', 'transcript_type'])
+mapped.saveTSV("genes_ntc_expression.tsv", key_order=['ensg', 'name', 'transcript_type'], gzip=True)
 
 # Clean out hanger on data
 # ['loc', 'name', 'ensg', 'tss_loc', 'conditions', 'strand']
@@ -316,6 +316,7 @@ mapped.save("genes_ntc_expression.glb") # These are the final tables.
 mapped = ensg.map(key="ensg", genelist=raw_expn)
 mapped.save("genes_ntc_expression_nonmerged.glb")
 mapped.saveTSV("genes_ntc_expression_nonmerged.tsv")
+mapped.saveTSV("genes_ntc_expression_nonmerged.tsv", gzip=True)
 
 arr.tree(filename="tree.png", color_threshold=0.0, label_size=5, size=(5,14))
 print()
